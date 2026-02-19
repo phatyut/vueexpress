@@ -1,8 +1,23 @@
 <template>
-    <div>
-             <ol v-for="element in items" :key="element">
-                <li>{{ element.name }} - {{ element.gender }} - {{ element.age }}</li>
-              </ol>   
+    <div class="relative full">
+
+
+      <table class="  relative w-full ">
+                <tr class="bg-blue-200 *:text-start  *:p-5">
+                    <th >name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                </tr>
+                <tr 
+                    class=" border-blue-100 hover:bg-blue-50 border-b *:p-5 *:text-start "
+                    v-for="element in items" :key="element">
+                    <th>{{ element.name }}</th>
+                    <th>{{ element.gender }}</th>
+                    <th>{{ element.age }}</th>
+                </tr>
+      </table>
+     
+           
     </div>
 </template>
 

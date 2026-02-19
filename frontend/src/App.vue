@@ -39,6 +39,13 @@
                       </button>
                   </div>
               </router-link>
+              <router-link to="/userinput" >
+                  <div class=" px-2.5  border-l-2 p-1 font-bold transition duration-150 hover:text-white hover:bg-gray-500 border-blue-300 border-b">
+                      <button class=" cursor-pointer ">
+                          Userinput
+                      </button>
+                  </div>
+              </router-link>
           </div>
        </div>
 

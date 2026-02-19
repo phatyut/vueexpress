@@ -8,6 +8,10 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Products from './components/production/Production.vue';
 import Evaluate from "./components/Rightbottom/evaluate/Evaluate.vue";
 import UserCredentail from './components/Rightbottom/userCredentail/UserCredentail.vue';
+import userinput from './datainput/userinput.vue';
+
+
+
 
 const app =createApp(App);
 
@@ -17,6 +21,7 @@ const router = createRouter({
             {path: '/products', component: Products},
             {path: '/evaluate', component:Evaluate },
             {path: '/usercredentail', component:UserCredentail },
+            {path: '/userinput', component:userinput},
           ]
     })
 app.use(router);    
